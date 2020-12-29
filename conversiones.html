@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unidades Fisicas</title>
+</head>
+<body>
+    
+<h1>CONVERSION DE UNIDADES</h1>
+
+<p>UNIDADES DE TEMPERATURA</p>
+
+<p>
+
+    SELECCIONE: <br>
+   <p>
+   <select name="CONVER" id="conversionA" >
+        <option value="celtoFah">Celcius a Fahrenheit</option>
+      <option value="FahtoCel">Fahrenheit a Celsius</option>
+      <option value="CeltoKel">Celsius a Kelvin</option>
+      <option value="KeltoCel">Kelvin a Celsius</option>
+      <option value="KeltoFah">Kelvin a Fahrenheit</option>
+      <option value="FahtoKel">Fahrenheit a Kelvin</option>
+    </select>    
+    </p>
+</p>
+<p id = "ingreso">INGRESE LOS GRADOS CELCIUS</p>   
+
+ <input type="number" id="tempin"> 
+
+<br>
+  <P>
+   <button type="button" id="CONVERTER" onclick = conversion()>CONVERTIR</button>
+  </P>
+ <h id = "result">0.00</h>
+ <h id = "resultund">°</h>
+
+
+ <p>UNIDADES DE VELOCIDAD</p>
+
+ <p>
+ 
+     SELECCIONE: <br>
+    <p>
+    <select name="CONVER_Velocidad" id="conversionB">
+ 
+      <option value="m/s a km/h">Metros por segundo a Kilmetros por hora</option>
+       <option value="km/h a m/s">Kilometros por hora a Metros por segundo</option>
+       <option value="m/h a km/h">Millas por hora a Kilmetros por hora</option>
+       <option value="nm a km/h">Milla Nautica a Kilmetros por hora</option>
+       <option value="km/h a m/h">Kilometros por hora a Millas por hora</option>
+       <option value="km/h a nm">Kilometros por hora a Milals Nautica</option>
+
+      </select>    
+     </p>
+ </p>
+ <p id = "ingreso">INGRESE LA VELOCIDAD</p>   
+ 
+  <input type="number" id="velin"> 
+ 
+ <br>
+   <P>
+    <button type="button" id="CONVERTERB" onclick = conversionVelocidad()>CONVERTIR</button>
+   </P>
+  <h id = "result_velocidad">0.00</h>
+  <h id = "resultund_velocidad"></h>
+
+
+  <p>UNIDADES DE PRESIÓN</p>
+
+ <p>
+ 
+     SELECCIONE: <br>
+    <p>
+    <select name="CONVER_Presion" id="conversionC">
+ 
+      <option value="psi a bar">PSI A BAR</option>
+      <option value="bar a psi">BAR A PSI</option>                   
+      <option value="mmhg a psi">MMHG A PSI</option> 
+      <option value="psi a mmhg">PSI A MMHG</option> 
+
+      </select>    
+     </p>
+ </p>
+ <p id = "ingreso">INGRESE LA Presion</p>   
+ 
+  <input type="number" id="presionin"> 
+ 
+ <br>
+   <P>
+    <button type="button" id="CONVERTERC" onclick = conversionPresion()>CONVERTIR</button>
+   </P>
+  <h id = "result_presion">0.00</h>
+  <h id = "resultund_presion"></h>
+
+<br>
+<a href="index.html">Fisica Pag</a>
+
+    <script src="./scripts/funcionconver.js"></script>
+
+</body>
+</html>
+
+
+
